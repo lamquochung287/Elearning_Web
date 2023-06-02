@@ -1,3 +1,32 @@
 .homepage_container {
   height: 70vh;
+  margin: -1rem 29rem;
+}
+
+.homepage_banner {
+  position: relative;
+}
+
+.banner_slogan {
+  width: 44rem;
+  height: 14rem;
+  top: 5rem;
+  left: 5rem;
+  padding: 2rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  .banner_slogan_tittle {
+    margin-top: -0.25rem;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .banner_slogan_text {
+    margin-top: -2rem;
+    font-family: var(--font-text);
+    font-size: 2rem;
+    font-weight: 490;
+  }
 }
