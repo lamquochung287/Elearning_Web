@@ -1,0 +1,55 @@
+.banner_container {
+  position: relative;
+}
+
+.banner_banner {
+  position: absolute;
+  width: 70vw;
+  height: 40vh;
+  display: flex;
+  img {
+    width: 70vw;
+    height: 40vh;
+  }
+}
+
+.banner_slogan {
+  width: 35rem;
+  height: auto;
+  top: 5rem;
+  left: 5rem;
+  padding: 2rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  .banner_slogan_tittle {
+    margin-top: -0.25rem;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .banner_slogan_text {
+    margin-top: -2rem;
+    font-family: var(--font-text);
+    font-size: 2rem;
+    font-weight: 490;
+  }
+}
+
+.btn_slider {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: transparent;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+}
+
+.right {
+  right: 2rem;
+}
+
+.left {
+  left: 2rem;
+}
