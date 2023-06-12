@@ -1,0 +1,15 @@
+.list_container {
+  width: auto;
+  height: auto;
+  .slick-track {
+    padding-left: 1.4rem;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  &::before {
+    color: black;
+    font-size: 4rem;
+  }
+}

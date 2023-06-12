@@ -1,18 +1,18 @@
 .banner_container {
-  position: relative;
+  width: 70vw;
+  height: 40vh;
 }
 
 .banner_banner {
   position: absolute;
   width: 70vw;
   height: 40vh;
-  display: flex;
-  img {
-    width: 70vw;
-    height: 40vh;
-  }
 }
 
+.banner_img {
+  width: 70vw;
+  height: 40vh;
+}
 .banner_slogan {
   width: 35rem;
   height: auto;
@@ -20,7 +20,8 @@
   left: 5rem;
   padding: 2rem 2rem;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08),
+    0 4px 12px rgba(0, 0, 0, 0.08);
   position: absolute;
   .banner_slogan_tittle {
     margin-top: -0.25rem;

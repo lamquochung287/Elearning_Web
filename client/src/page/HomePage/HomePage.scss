@@ -1,5 +1,8 @@
 .homepage_container {
-  height: 70vh;
-  margin: -1rem 29rem;
-  display: inline-block;
+  height: auto;
+  width: 70vw;
+  margin: 2rem 29rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }

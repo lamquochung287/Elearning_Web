@@ -3,19 +3,22 @@
   margin-top: -0.5rem;
   font-size: 3rem;
   font-style: italic;
-  background: -webkit-linear-gradient(var(--amethyst), rgba(0, 0, 0, 0.8));
+  background: -webkit-linear-gradient(
+    var(--amethyst),
+    rgba(0, 0, 0, 0.8)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .navbar_container {
-  width: 100%;
+  width: auto;
   cursor: pointer;
   margin: 1rem;
   padding: 1rem 1rem;
   display: flex;
   gap: 3rem;
-  height: 5vh;
+  height: 5%;
   align-items: center;
   font-family: var(--font-header);
   font-weight: 500;

@@ -1,36 +1,48 @@
-import React, { useEffect, useState } from 'react';
+import React, {
+  useEffect,
+  useState
+} from 'react';
 import './Banner.scss';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import MySlider from '../Slider/MySlider';
+
 export const Banner = () => {
   const dataBanner = [
     {
       srcImg: 'banner.jpg',
       sloganTitle: 'Learning that gets you',
-      sloganText: `Skills for your present (and your future). Get started with us.`,
+      sloganText: `Skills for your present (and your future). Get started with us.`
     },
     {
       srcImg: 'banner_2.jpg',
-      sloganTitle: 'Unlock the power of your people',
-      sloganText: `Elearning Business is trusted by 12.5K+ companies around the world. Find out what we can do for yours.`,
+      sloganTitle:
+        'Unlock the power of your people',
+      sloganText: `Elearning Business is trusted by 12.5K+ companies around the world. Find out what we can do for yours.`
     },
     {
       srcImg: 'banner_3.jpg',
       sloganTitle: 'Learning for all',
-      sloganText: `Thousands of courses to help you succeed in your goals — at work and in life.`,
-    },
+      sloganText: `Thousands of courses to help you succeed in your goals — at work and in life.`
+    }
   ];
 
-  const [currentBanner, setCurrentBanner] = useState(0);
+  const [currentBanner, setCurrentBanner] =
+    useState(0);
   const nextSlide = () => {
-    setCurrentBanner((currentBanner + 1) % dataBanner.length);
+    setCurrentBanner(
+      (currentBanner + 1) % dataBanner.length
+    );
   };
 
   const prevSlide = () => {
     if (currentBanner === 0) {
       setCurrentBanner(dataBanner.length - 1);
     } else {
-      setCurrentBanner(Math.abs(currentBanner - 1) % dataBanner.length);
+      setCurrentBanner(
+        Math.abs(currentBanner - 1) %
+          dataBanner.length
+      );
     }
   };
 
@@ -45,13 +57,49 @@ export const Banner = () => {
   }, [currentBanner]);
   return (
     <div className="banner_container">
-      <article className="banner_banner">
-        <img src={dataBanner[currentBanner].srcImg} alt="banner advertise" />
+      <MySlider>
+        {dataBanner.map((data, index) => (
+          <article
+            className="banner_banner"
+            key={index}
+          >
+            <img
+              className="banner_img"
+              src={data.srcImg}
+              alt="banner advertise"
+            />
+            <div className="banner_slogan">
+              <p className="banner_slogan_tittle">
+                {data.sloganTitle}
+              </p>
+              <p className="banner_slogan_text">
+                {data.sloganText}
+              </p>
+            </div>
+          </article>
+        ))}
+      </MySlider>
+
+      {/* <article className="banner_banner">
+        <img
+          src={dataBanner[currentBanner].srcImg}
+          alt="banner advertise"
+        />
         <div className="banner_slogan">
-          <p className="banner_slogan_tittle">{dataBanner[currentBanner].sloganTitle}</p>
-          <p className="banner_slogan_text">{dataBanner[currentBanner].sloganText}</p>
+          <p className="banner_slogan_tittle">
+            {
+              dataBanner[currentBanner]
+                .sloganTitle
+            }
+          </p>
+          <p className="banner_slogan_text">
+            {dataBanner[currentBanner].sloganText}
+          </p>
         </div>
-        <button className="btn_slider right" onClick={nextSlide}>
+        <button
+          className="btn_slider right"
+          onClick={nextSlide}
+        >
           <NavigateNextIcon
             sx={{
               width: '4rem',
@@ -59,11 +107,14 @@ export const Banner = () => {
               fill: 'white',
               fontSize: '4rem',
               backgroundColor: 'black',
-              borderRadius: '50%',
+              borderRadius: '50%'
             }}
           />
         </button>
-        <button className="btn_slider left" onClick={prevSlide}>
+        <button
+          className="btn_slider left"
+          onClick={prevSlide}
+        >
           <ChevronLeftIcon
             sx={{
               width: '4rem',
@@ -71,11 +122,11 @@ export const Banner = () => {
               fill: 'white',
               fontSize: '4rem',
               backgroundColor: 'black',
-              borderRadius: '50%',
+              borderRadius: '50%'
             }}
           />
         </button>
-      </article>
+      </article> */}
     </div>
   );
 };
