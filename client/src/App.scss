@@ -1,0 +1,12 @@
+.content_container {
+  height: auto;
+  width: 70vw;
+  margin: 2rem 29rem;
+}
+
+.app_container {
+  min-height: 100vh;
+  width: auto;
+  display: grid;
+  grid-template-rows: 0.3fr auto 1fr;
+}
