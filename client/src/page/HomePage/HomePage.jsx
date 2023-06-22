@@ -24,8 +24,7 @@ export const HomePage = () => {
     {
       videoThumbnail:
         'https://img-b.udemycdn.com/course/240x135/4777782_41a2_6.jpg',
-      nameCourse:
-        'Learn Game Development with JavaScript',
+      nameCourse: 'Learn Game Development with JavaScript',
       price: '249,000',
       author: 'Frank Dvorak',
       starRate: 4.4
@@ -33,8 +32,7 @@ export const HomePage = () => {
     {
       videoThumbnail:
         'https://img-b.udemycdn.com/course/240x135/4418914_9e62_5.jpg',
-      nameCourse:
-        'TypeScript Complete Course - Beginner To Advanced + Project',
+      nameCourse: 'TypeScript Complete Course - Beginner To Advanced + Project',
       price: '249,000',
       author: 'Manik (Cloudaffle)',
       starRate: 4.7
@@ -42,8 +40,7 @@ export const HomePage = () => {
     {
       videoThumbnail:
         'https://img-b.udemycdn.com/course/480x270/764164_de03_5.jpg',
-      nameCourse:
-        'The Complete Web Developer Course 3.0',
+      nameCourse: 'The Complete Web Developer Course 3.0',
       price: '379,000',
       author: 'Robison Race',
       starRate: 4.7
@@ -51,8 +48,7 @@ export const HomePage = () => {
     {
       videoThumbnail:
         'https://img-b.udemycdn.com/course/240x135/4724938_ab3d_3.jpg',
-      nameCourse:
-        'Mastering TypeScript - 2023 Edition',
+      nameCourse: 'Mastering TypeScript - 2023 Edition',
       price: '279,000',
       author: 'Colt Steele',
       starRate: 4.7

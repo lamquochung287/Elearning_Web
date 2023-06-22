@@ -1,0 +1,15 @@
+.wapper_tippy_data {
+  padding: 1rem 1rem;
+  .tippy_tab:hover {
+    color: var(--amethyst);
+  }
+  .tippy_tab {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 1.7rem;
+  }
+  .tippy-popper {
+    background-color: white;
+  }
+}

@@ -1,0 +1,37 @@
+.sign_up_page_container {
+  display: flex;
+  margin: auto auto;
+  flex-direction: column;
+  width: 30%;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 1.2rem;
+  input {
+    padding: 2rem 2rem;
+    font-weight: bold;
+  }
+
+  button {
+    background-color: var(--amethyst);
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    border: none;
+    padding: 1.5rem 2rem;
+  }
+
+  button:hover {
+    background-color: var(--amethyst-hover);
+  }
+
+  a:hover {
+    color: var(--amethyst-hover);
+  }
+
+  a {
+    color: var(--amethyst);
+  }
+  h3 {
+    text-align: center;
+  }
+}

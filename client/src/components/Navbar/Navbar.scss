@@ -3,10 +3,7 @@
   margin-top: -0.5rem;
   font-size: 3rem;
   font-style: italic;
-  background: -webkit-linear-gradient(
-    var(--amethyst),
-    rgba(0, 0, 0, 0.8)
-  );
+  background: -webkit-linear-gradient(var(--amethyst), rgba(0, 0, 0, 0.8));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -14,15 +11,20 @@
 .navbar_container {
   width: auto;
   cursor: pointer;
-  margin: 1rem;
+  margin: 0.2rem;
   padding: 1rem 1rem;
-  display: flex;
-  gap: 3rem;
+  display: grid;
+  column-gap: 2rem;
   height: auto;
+  grid-template-columns: 0.1fr auto auto;
   align-items: center;
   font-family: var(--font-header);
   font-weight: 500;
-  border-bottom: 1px solid gray;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 20px -20px;
+  .display_flex {
+    margin-left: 2rem;
+    gap: 4rem;
+  }
 }
 
 .navbar_tab {
@@ -73,4 +75,21 @@
 
 button {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .navbar_search {
+    min-width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar_search {
+    min-width: 40vw;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .navbar_search {
+    min-width: 30vw;
+  }
 }

@@ -1,6 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica,
-    Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   line-height: 1.5;
   font-synthesis: none;
@@ -9,21 +8,17 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --font-heading: SuisseWorks, Georgia, Times,
-    'Times New Roman', serif, 'Apple Color Emoji',
+  --font-heading: SuisseWorks, Georgia, Times, 'Times New Roman', serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-header: 'Udemy Sans', -apple-system, BlinkMacSystemFont, Roboto,
+    'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-header: 'Udemy Sans', -apple-system,
-    BlinkMacSystemFont, Roboto, 'Segoe UI',
-    Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  --font-text: 'Udemy Sans', 'SF Pro Text',
-    -apple-system, BlinkMacSystemFont, Roboto,
-    'Segoe UI', Helvetica, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  --font-text: 'Udemy Sans', 'SF Pro Text', -apple-system, BlinkMacSystemFont,
+    Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
 
   --amethyst: #b356f2ff;
+  --amethyst-hover: #8710d8;
 }
 
 html {
@@ -39,4 +34,27 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   font-family: var(--font-heading);
+}
+@media (max-width: 1870px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1680px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media (max-width: 1580px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 5px;
+  }
 }
