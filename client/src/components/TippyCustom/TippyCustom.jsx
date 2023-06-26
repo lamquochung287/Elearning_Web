@@ -17,6 +17,9 @@ export const TippyCustom = ({ children }) => {
     },
     {
       typeTittle: 'Mobile Development'
+    },
+    {
+      typeTittle: 'Database Management'
     }
   ];
 
@@ -45,7 +48,10 @@ export const TippyCustom = ({ children }) => {
       position={'bottom'}
       interactive
       html={<RenderResult />}
+      size="big"
       theme="light"
+      distance={15}
+      className="tooltip-box"
     >
       {children}
     </Tooltip>

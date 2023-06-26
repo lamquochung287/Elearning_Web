@@ -1,0 +1,87 @@
+.course_container {
+  width: auto;
+  height: auto;
+  padding: 2rem 2rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .course_detail_image {
+    margin: auto;
+    width: 90%;
+    height: 90%;
+  }
+
+  .course_name {
+    font-size: 2rem;
+  }
+  .course_information_container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .course_star {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .rate_color {
+    color: #ffd700;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+
+  .bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    font-size: 1.5rem;
+  }
+  .gap_display_flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .button_add_to_cart {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    padding: 1.5rem 1.5rem;
+    background-color: var(--amethyst);
+  }
+
+  .button_add_to_cart:hover {
+    background-color: var(--amethyst-hover);
+  }
+  .button_buy_now {
+    margin: 1rem 0rem;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1.5rem 1.5rem;
+    background-color: white;
+  }
+  .button_buy_now:hover {
+    background-color: rgb(242, 242, 242);
+  }
+
+  .text-align-center {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}

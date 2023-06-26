@@ -2,10 +2,7 @@ import React from 'react';
 import './ListCourse.scss';
 import CourseItem from '../CourseItem/CourseItem';
 import MySlider from '../Slider/MySlider';
-export const ListCourse = ({
-  titleList,
-  listData
-}) => {
+export const ListCourse = ({ titleList, listData }) => {
   const settings = {
     infinite: false,
     speed: 500,
@@ -19,9 +16,9 @@ export const ListCourse = ({
     <div className="list_container">
       <h1>{titleList}</h1>
       <MySlider settings={settings}>
-        {listData.map((data, index) => (
+        {listData.map((data) => (
           <CourseItem
-            key={index}
+            key={data.id}
             data={data}
           />
         ))}
