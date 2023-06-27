@@ -1,7 +1,11 @@
 import React from 'react';
 import './CartItem.scss';
-
+import { RubbishIcon } from '../../../components/Icon/Icon';
+import { useDispatch, useSelector } from 'react-redux';
+import CustomDialog from '../../../components/Dialog/CustomDialog';
 export const CartItem = () => {
+  const { openDialog } = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
   const data = {
     id: 'N0001',
     videoThumbnail:
@@ -25,6 +29,15 @@ export const CartItem = () => {
         </span>
       </div>
       <h2>{data.price}</h2>
+      <div>
+        {/* <button
+          className="btn_delete"
+          onClick={handleDeleteItem}
+        >
+          <RubbishIcon />
+        </button> */}
+        <CustomDialog course={data} />
+      </div>
     </div>
   );
 };
